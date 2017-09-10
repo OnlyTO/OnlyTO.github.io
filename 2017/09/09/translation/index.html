@@ -238,7 +238,7 @@
 
     
         <meta property="article:published_time" content="Sat Sep 09 2017 22:51:58 GMT+0800" />
-        <meta property="article:modified_time" content="Sun Sep 10 2017 01:00:02 GMT+0800" />
+        <meta property="article:modified_time" content="Sun Sep 10 2017 12:32:39 GMT+0800" />
     
 
     <!-- The Twitter Card protocol -->
@@ -265,7 +265,7 @@
     "mainEntityOfPage": "http://yoursite.com/child/2017/09/09/translation/index.html",
     "headline": "python学习之利用Google翻译实现翻译功能",
     "datePublished": "Sat Sep 09 2017 22:51:58 GMT+0800",
-    "dateModified": "Sun Sep 10 2017 01:00:02 GMT+0800",
+    "dateModified": "Sun Sep 10 2017 12:32:39 GMT+0800",
     "author": {
         "@type": "Person",
         "name": "OnlyTO",
@@ -475,7 +475,7 @@
 </blockquote>
 <hr>
 <h4 id="GET方式"><a href="#GET方式" class="headerlink" title="GET方式"></a>GET方式</h4><h5 id="1-抓包分析"><a href="#1-抓包分析" class="headerlink" title="1.抓包分析"></a>1.抓包分析</h5><p>先用浏览器进入Google翻译网页，选择汉译英方式，在输入框输入文本“我爱你”，再<code>F12</code>，点击<code>翻译</code>，然后在调试界面的<code>Network</code>选项里看到抓到的包。</p>
-<p><img src="..\..\public\img\python\1.png" alt=""></p>
+<p><img src="\img\python\1.png" alt=""></p>
 <p>目前发现的URL=<a href="https://translate.google.cn/translate_a/single?client=t&amp;sl=zh-CN&amp;tl=en&amp;hl=zh-CN&amp;dt=at&amp;dt=bd&amp;dt=ex&amp;dt=ld&amp;dt=md&amp;dt=qca&amp;dt=rw&amp;dt=rm&amp;dt=ss&amp;dt=t&amp;ie=UTF-8&amp;oe=UTF-8&amp;source=btn&amp;ssel=0&amp;tsel=0&amp;kc=0&amp;tk=447346.45965&amp;q=%E6%88%91%E7%88%B1%E4%BD%A0。" target="_blank" rel="external">https://translate.google.cn/translate_a/single?client=t&amp;sl=zh-CN&amp;tl=en&amp;hl=zh-CN&amp;dt=at&amp;dt=bd&amp;dt=ex&amp;dt=ld&amp;dt=md&amp;dt=qca&amp;dt=rw&amp;dt=rm&amp;dt=ss&amp;dt=t&amp;ie=UTF-8&amp;oe=UTF-8&amp;source=btn&amp;ssel=0&amp;tsel=0&amp;kc=0&amp;tk=447346.45965&amp;q=%E6%88%91%E7%88%B1%E4%BD%A0。</a></p>
 <p>以及请求所需参数：<br><img src="..\..\public\img\python\2.png" alt=""></p>
 <p>参数里的tk值是进过计算得到的，我们这里可以通过js得到，最后用个字典连接在url后面就行。</p>
